@@ -387,6 +387,7 @@ func (car *EntityCar) GetFilteredAndPaginatedInfo(
 
 	if err := rows.Err(); err != nil {
 		logrus.Debugln(err)
+		return nil, http.StatusInternalServerError
 	}
 
 	return result, http.StatusOK
