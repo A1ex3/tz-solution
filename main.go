@@ -18,7 +18,8 @@ func main() {
 	envFile := flag.String("ENV_FILE", "", "")
 	flag.Parse()
 	if *envFile == "" {
-		logrus.Infoln("The path to the .env file is not specified.")
+		logrus.Infoln("You must specify a value for the ENV_FILE variable.")
+		return
 	}
 
 	newConfig := configuration.NewConfiguration(*envFile)

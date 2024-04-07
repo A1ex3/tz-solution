@@ -1,6 +1,3 @@
-// @title Car API
-// @version 1.0
-
 package http
 
 import (
