@@ -25,8 +25,8 @@ type CarApiResponseGetInfoOwner struct {
 }
 
 type CarApiResponseGetFilteredAndPaginatedInfo struct {
-	CurrentPage int                      `json:"currentPage"`
 	PerPage     uint                     `json:"perPage"`
 	TotalPages  uint                     `json:"totalPages"`
+	CurrentPage int                      `json:"currentPage"`
 	List        []*CarApiResponseGetInfo `json:"list"`
 }

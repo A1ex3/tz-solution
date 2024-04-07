@@ -13,12 +13,12 @@ import (
 )
 
 type EntityCar struct {
-	id     int
-	year   int
-	owner  *EntityPeople
 	regNum string
 	mark   string
 	model  string
+	id     int
+	year   int
+	owner  *EntityPeople
 }
 
 func (car *EntityCar) GetId() int {

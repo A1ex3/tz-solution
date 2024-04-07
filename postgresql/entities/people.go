@@ -8,10 +8,10 @@ import (
 )
 
 type EntityPeople struct {
-	id         int
 	name       string
 	surname    string
 	patronymic string
+	id         int
 }
 
 type EntityPeopleValidation struct{}

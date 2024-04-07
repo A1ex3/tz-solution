@@ -1,8 +1,8 @@
 package api
 
 type defaultResponses struct {
-	StatusCode  int    `json:"statusCode"`
 	Description string `json:"description"`
+	StatusCode  int    `json:"statusCode"`
 }
 
 func NewDefaultResponses() *defaultResponses {

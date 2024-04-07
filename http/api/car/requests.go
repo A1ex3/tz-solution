@@ -7,23 +7,23 @@ type CarApiRequest struct {
 }
 
 type CarApiRequestAdd struct {
-	Year   int    `json:"year"`
 	RegNum string `json:"regNum"`
 	Mark   string `json:"mark"`
 	Model  string `json:"model"`
+	Year   int    `json:"year"`
 }
 
 type CarApiRequestUpdate struct {
-	OwnerId *int    `json:"ownerId,omitempty"`
 	RegNum  *string `json:"regNum,omitempty"`
+	OwnerId *int    `json:"ownerId,omitempty"`
 }
 
 type CarApiRequestGetFilteredAndPaginatedInfo struct {
-	Year       []int    `json:"year,omitempty"`
 	RegNum     []string `json:"regNum,omitempty"`
 	Mark       []string `json:"mark,omitempty"`
 	Model      []string `json:"model,omitempty"`
 	Name       []string `json:"name,omitempty"`
 	Surname    []string `json:"surname,omitempty"`
 	Patronymic []string `json:"patronymic,omitempty"`
+	Year       []int    `json:"year,omitempty"`
 }

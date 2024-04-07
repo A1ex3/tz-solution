@@ -1,11 +1,11 @@
 package postgresql
 
-type Postgresql struct{
-	Port int
-	Host string
-	User string
+type Postgresql struct {
+	Host     string
+	User     string
 	Password string
 	Database string
+	Port     int
 }
 
 func NewPostgresql(
@@ -14,12 +14,12 @@ func NewPostgresql(
 	database string,
 	user string,
 	password string,
-) *Postgresql{
+) *Postgresql {
 	return &Postgresql{
-		Host: host,
-		Port: port,
+		Host:     host,
+		Port:     port,
 		Database: database,
-		User: user,
+		User:     user,
 		Password: password,
 	}
 }

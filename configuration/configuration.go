@@ -12,12 +12,12 @@ type Configuration struct {
 }
 
 type EntityConfiguration struct {
-	PostgresPort             int
 	PostgresHost             string
 	PostgresUser             string
 	PostgresPassword         string
 	PostgresDb               string
 	PostgresPathToMigrations string
+	PostgresPort             int
 }
 
 func NewConfiguration(envFileName string) *Configuration {
